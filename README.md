@@ -16,8 +16,21 @@ Software – Quartus prime
 5. For different input combinations generate the timing diagram.
 
 # Program:
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog
-programming.
+```
+module boolean_fucntion (
+    input  wire A,
+    input  wire B,
+    input  wire C,
+    input  wire D,
+    output wire F
+);
+
+assign F = (~A & B) | (C & D) | (A & ~D);
+
+endmodule
+```
+
+
 # Developed by:  BUSHPIKA C
 # RegisterNumber: 25007434
 # RTL realization
